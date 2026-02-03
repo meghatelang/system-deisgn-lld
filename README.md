@@ -1,2 +1,9 @@
 # system-deisgn-lld
-Frontend System Design - LLD
+
+This repository contains **Low Level Design (LLD) questions and practical implementations** across frontend and backend concepts.
+
+## Included
+- LLD questions and design notes
+- Reusable UI components and patterns  
+  - Shimmer UI (CSS)
+  - Shimmer UI (Tailwind CSS)
