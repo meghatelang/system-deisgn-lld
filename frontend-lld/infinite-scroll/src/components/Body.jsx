@@ -24,6 +24,9 @@ const Body = () => {
   };
 
   const handleScroll = () => {
+    // scrollY - how much we have scrolled
+    // innerHeight - visible section of the window
+    // scrollHeight - total height of the web page
     if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
       fetchMemes();
     }
