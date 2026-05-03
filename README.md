@@ -8,3 +8,4 @@ This repository contains **Low Level Design (LLD) questions and practical implem
 - Reusable UI components and patterns
   - Shimmer UI (Tailwind CSS)
   - Infinite Scroll
+  - Accordion
