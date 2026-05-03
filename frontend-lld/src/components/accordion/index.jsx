@@ -25,7 +25,7 @@ const Accordion = () => {
             />
           </div>
           {accordion === i && (
-            <div className="border-b border-l border-r border-gray-300 p-2">
+            <div className="border-b border-l border-r border-gray-300 p-2 shadow-lg">
               {acc.body}
             </div>
           )}

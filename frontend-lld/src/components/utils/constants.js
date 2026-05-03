@@ -16,6 +16,11 @@ export const MENU = [
     title: "Accordion",
     component: lazy(() => import("../accordion")),
   },
+  {
+    id: "multi-accordion",
+    title: "Multi Accordion",
+    component: lazy(() => import("../multi-accordion")),
+  },
 ];
 
 export const ACCORDION_DATA = [
