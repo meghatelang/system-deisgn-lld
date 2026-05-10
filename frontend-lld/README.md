@@ -10,4 +10,4 @@ This repository contains **Low Level Design (LLD) questions and practical implem
   - Infinite Scroll
   - Accordion (open one accordion at a time)
   - Multi Accordion(open multiple accordions at a time)
-  - Nested Comments
+  - Reddit Nested Comments

@@ -21,6 +21,11 @@ export const MENU = [
     title: "Multi Accordion",
     component: lazy(() => import("../multi-accordion")),
   },
+  {
+    id: "nested-comments",
+    title: "Reddit Nested Comments",
+    component: lazy(() => import("../nested-comments")),
+  },
 ];
 
 export const ACCORDION_DATA = [
