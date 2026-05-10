@@ -9,7 +9,10 @@ const Comments = ({ data }) => {
           />
         </div>
         <div>
-          <div className="font-bold">{comment.username}</div>
+          <div className="font-bold">
+            {comment.username} - &nbsp;
+            <span className="font-light">{comment.timeStr}</span>
+          </div>
           <div>{comment.comment}</div>
         </div>
       </div>

@@ -24,6 +24,28 @@ const data = [
             timeStr: "2m ago",
             comment:
               "Loreum isLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            replies: [
+              {
+                username: "Raghu",
+                timeStr: "2m ago",
+                comment:
+                  "Loreum isLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+              },
+              {
+                username: "Raghu",
+                timeStr: "2m ago",
+                comment:
+                  "Loreum isLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                replies: [
+                  {
+                    username: "Sapna",
+                    timeStr: "2m ago",
+                    comment:
+                      "Loreum isLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+                  },
+                ],
+              },
+            ],
           },
         ],
       },
@@ -40,14 +62,6 @@ const data = [
         timeStr: "2w ago",
         comment:
           "Loreum isLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        replies: [
-          {
-            username: "Raghu",
-            timeStr: "2m ago",
-            comment:
-              "Loreum isLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-          },
-        ],
       },
       {
         username: "Megha",
