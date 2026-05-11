@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Shimmer from "../common/Shimmer";
+import type { ComponentProps } from "../../types";
 
-const Body = ({ scrollRef }) => {
+const Body = ({ scrollRef }: ComponentProps) => {
   const [memes, setMemes] = useState([]);
   const [showShimmer, setShowShimmer] = useState(false);
 
   useEffect(() => {
     fetchMemes();
 
-    const el = scrollRef.current;
+    const el = scrollRef?.current;
 
     if (!el) return;
 
@@ -31,7 +32,7 @@ const Body = ({ scrollRef }) => {
     // scrollY - how much we have scrolled
     // innerHeight - visible section of the window
     // scrollHeight - total height of the web page
-    const el = scrollRef.current;
+    const el = scrollRef?.current;
 
     if (!el) return;
 

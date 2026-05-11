@@ -1,30 +1,31 @@
 import { lazy } from "react";
+import type { Menu } from "../../types";
 
-export const MENU = [
+export const MENU: Menu = [
   {
     id: "shimmer-ui",
     title: "Shimmer UI",
-    component: lazy(() => import("../shimmer-ui")),
+    component: lazy(() => import("../shimmer-ui/index.jsx")),
   },
   {
     id: "infinite-scroll",
     title: "Infinite Scroll",
-    component: lazy(() => import("../infinite-scroll")),
+    component: lazy(() => import("../infinite-scroll/index.jsx")),
   },
   {
     id: "accordion",
     title: "Accordion",
-    component: lazy(() => import("../accordion")),
+    component: lazy(() => import("../accordion/index.jsx")),
   },
   {
     id: "multi-accordion",
     title: "Multi Accordion",
-    component: lazy(() => import("../multi-accordion")),
+    component: lazy(() => import("../multi-accordion/index.jsx")),
   },
   {
     id: "nested-comments",
     title: "Reddit Nested Comments",
-    component: lazy(() => import("../nested-comments")),
+    component: lazy(() => import("../nested-comments/index.jsx")),
   },
 ];
 

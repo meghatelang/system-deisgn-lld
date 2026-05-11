@@ -1,5 +1,6 @@
 import { Suspense, useMemo, useRef, useState } from "react";
-import { MENU } from "./utils/constants";
+import { MENU } from "./utils/constants.js";
+import type { MenuItem } from "../types.js";
 
 const Layout = () => {
   const [menu, setMenu] = useState(MENU[0]);
@@ -8,7 +9,7 @@ const Layout = () => {
 
   const menuOptions = useMemo(() => MENU, []);
 
-  const menuHandler = (menu) => {
+  const menuHandler = (menu: MenuItem) => {
     setMenu(menu);
   };
 
@@ -20,7 +21,7 @@ const Layout = () => {
         {menuOptions.map((item, i) => (
           <li
             className={`p-2 cursor-pointer
-            ${menu.id === item.id ? "bg-blue-200" : "bg-gray-50 hover:bg-gray-200"}`}
+            ${menu?.id === item.id ? "bg-blue-200" : "bg-gray-50 hover:bg-gray-200"}`}
             key={item.id}
             onClick={() => menuHandler(item)}
           >
@@ -33,7 +34,7 @@ const Layout = () => {
         ref={scrollRef}
       >
         <Suspense fallback={<div>Loading...</div>}>
-          <ComponentToRender scrollRef={scrollRef} />
+          {ComponentToRender && <ComponentToRender scrollRef={scrollRef} />}
         </Suspense>
       </div>
     </div>
