@@ -5,7 +5,7 @@ import type {
 } from "react";
 
 export type ComponentProps = {
-  scrollRef?: MutableRefObject<null>;
+  scrollRef?: MutableRefObject<HTMLDivElement | null>;
 };
 export type MenuItem = {
   id: string;

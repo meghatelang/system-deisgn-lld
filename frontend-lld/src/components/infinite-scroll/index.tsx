@@ -3,7 +3,9 @@ import Shimmer from "../common/Shimmer";
 import type { ComponentProps } from "../../types";
 
 const Body = ({ scrollRef }: ComponentProps) => {
-  const [memes, setMemes] = useState([]);
+  const [memes, setMemes] = useState<Array<{ url?: string; author?: string }>>(
+    [],
+  );
   const [showShimmer, setShowShimmer] = useState(false);
 
   useEffect(() => {
