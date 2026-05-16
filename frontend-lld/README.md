@@ -11,4 +11,4 @@ This repository contains **Low Level Design (LLD) questions and practical implem
   - Accordion (open one accordion at a time)
   - Multi Accordion(open multiple accordions at a time)
   - Reddit Nested Comments
-  - Image Slider
+  - Image Slider (Carousel)
