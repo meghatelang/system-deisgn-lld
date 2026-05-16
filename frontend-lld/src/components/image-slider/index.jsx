@@ -13,15 +13,15 @@ const images = [
 const ImageSlider = () => {
   const [active, setActive] = useState(0);
 
-  useEffect(() => {
-    // for auto sliding after 3s
-    const interval = setInterval(() => {
-      setActive((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
+  // useEffect(() => {
+  //   // for auto sliding after 3s
+  //   const interval = setInterval(() => {
+  //     setActive((prev) => (prev + 1) % images.length);
+  //   }, 3000);
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, []);
 
   return (
     <div className="flex items-center">
