@@ -32,6 +32,11 @@ export const MENU: Menu = [
     title: "Image Slider",
     component: lazy(() => import("../image-slider")),
   },
+  {
+    id: "autocomplete-search",
+    title: "Autocomplete Search",
+    component: lazy(() => import("../autocomplete-search")),
+  },
 ];
 
 export const ACCORDION_DATA = [
