@@ -12,3 +12,4 @@ This repository contains **Low Level Design (LLD) questions and practical implem
   - Multi Accordion(open multiple accordions at a time)
   - Reddit Nested Comments
   - Image Slider (Carousel)
+  - Autocomplete (Typeahead)
