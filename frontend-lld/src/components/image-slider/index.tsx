@@ -11,7 +11,7 @@ const images = [
 ];
 
 const ImageSlider = () => {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState<number>(0);
 
   // useEffect(() => {
   //   // for auto sliding after 3s
