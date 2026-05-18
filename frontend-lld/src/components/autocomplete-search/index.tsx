@@ -8,7 +8,12 @@ const AutocompleteSearch = () => {
   const [showResults, setShowResults] = useState<Boolean>(false);
 
   useEffect(() => {
-    fetchData();
+    const t = setTimeout(() => {
+      fetchData();
+    }, 300);
+    return () => {
+      clearTimeout(t);
+    };
   }, [searchText]);
 
   const fetchData = async () => {
@@ -45,7 +50,9 @@ const AutocompleteSearch = () => {
       {searchRes.length > 1 && showResults && (
         <ul className="border-l w-100 border-r border-b border-gray-400">
           {searchRes?.map((str, i) => (
-            <li key={i}>{str}</li>
+            <li className="hover:bg-amber-100 px-2 py-1 cursor-pointer" key={i}>
+              {str}
+            </li>
           ))}
         </ul>
       )}
