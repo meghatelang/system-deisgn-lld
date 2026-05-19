@@ -31,7 +31,7 @@ const AutocompleteSearch = () => {
       <div className="relative w-100 p-2 border border-gray-400">
         <input
           type="text"
-          placeholder="Enter the search text"
+          placeholder="Type the search text"
           className="w-full outline-none"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
