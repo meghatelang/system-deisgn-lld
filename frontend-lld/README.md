@@ -14,4 +14,3 @@ This repository contains **Low Level Design (LLD) questions and practical implem
   - Image Slider (Carousel)
   - Autocomplete (Typeahead)
   - Youtube Live Stream Chat UI
-  - Pagination
