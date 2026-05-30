@@ -13,4 +13,3 @@ This repository contains **Low Level Design (LLD) questions and practical implem
   - Reddit Nested Comments
   - Image Slider (Carousel)
   - Autocomplete (Typeahead)
-  - Youtube Live Stream Chat UI
