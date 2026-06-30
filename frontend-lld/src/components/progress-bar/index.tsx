@@ -17,7 +17,8 @@ const ProgressBar = () => {
     <div>
       <div className="h-8 border-black-200 bg-gray-200 rounded-full m-2 relative">
         <div
-          className={`${getProgressColor()} w-[${progress}%] h-full rounded-full tarnsition-width duration-300`}
+          className={`${getProgressColor()} h-full rounded-full tarnsition-width duration-300`}
+          style={{ width: `${progress}%` }}
         ></div>
         <span className="flex items-center justify-center text-gray-600 absolute top-0 left-[50%]">
           {progress} %
