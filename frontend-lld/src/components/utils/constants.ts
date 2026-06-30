@@ -37,6 +37,11 @@ export const MENU: Menu = [
     title: "Autocomplete Search",
     component: lazy(() => import("../autocomplete-search")),
   },
+  {
+    id: "progress-bar",
+    title: "Progress Bar",
+    component: lazy(() => import("../progress-bar")),
+  },
 ];
 
 export const ACCORDION_DATA = [
