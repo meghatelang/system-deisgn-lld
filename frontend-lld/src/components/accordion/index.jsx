@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ACCORDION_DATA } from "../utils/constants";
+import { ACCORDION_DATA } from "../../utils/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,46 +1,46 @@
 import { lazy } from "react";
-import type { Menu } from "../../types";
+import type { Menu } from "../types";
 
 export const MENU: Menu = [
   {
     id: "shimmer-ui",
     title: "Shimmer UI",
-    component: lazy(() => import("../shimmer-ui")),
+    component: lazy(() => import("../components/shimmer-ui")),
   },
   {
     id: "infinite-scroll",
     title: "Infinite Scroll",
-    component: lazy(() => import("../infinite-scroll")),
+    component: lazy(() => import("../components/infinite-scroll")),
   },
   {
     id: "accordion",
     title: "Accordion",
-    component: lazy(() => import("../accordion")),
+    component: lazy(() => import("../components/accordion")),
   },
   {
     id: "multi-accordion",
     title: "Multi Accordion",
-    component: lazy(() => import("../multi-accordion")),
+    component: lazy(() => import("../components/multi-accordion")),
   },
   {
     id: "nested-comments",
     title: "Reddit Nested Comments",
-    component: lazy(() => import("../nested-comments")),
+    component: lazy(() => import("../components/nested-comments")),
   },
   {
     id: "image-slider",
     title: "Image Slider",
-    component: lazy(() => import("../image-slider")),
+    component: lazy(() => import("../components/image-slider")),
   },
   {
     id: "autocomplete-search",
     title: "Autocomplete Search",
-    component: lazy(() => import("../autocomplete-search")),
+    component: lazy(() => import("../components/autocomplete-search")),
   },
   {
     id: "progress-bar",
     title: "Progress Bar",
-    component: lazy(() => import("../progress-bar")),
+    component: lazy(() => import("../components/progress-bar")),
   },
 ];
 

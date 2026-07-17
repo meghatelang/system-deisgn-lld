@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ACCORDION_DATA } from "../utils/constants";
+import { ACCORDION_DATA } from "../../utils/constants";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const MultiAccordion = () => {

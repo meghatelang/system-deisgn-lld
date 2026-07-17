@@ -1,5 +1,5 @@
 import { Suspense, useMemo, useRef, useState } from "react";
-import { MENU } from "./utils/constants.js";
+import { MENU } from "../utils/constants.js";
 import type { MenuItem } from "../types.js";
 
 const Layout = () => {
