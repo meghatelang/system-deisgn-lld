@@ -42,6 +42,16 @@ export const MENU: Menu = [
     title: "Progress Bar",
     component: lazy(() => import("../components/progress-bar")),
   },
+  {
+    id: "file-folder",
+    title: "File Folder Structure",
+    component: lazy(() => import("../components/file-folder-structure")),
+  },
+  {
+    id: "music-player",
+    title: "Music Player",
+    component: lazy(() => import("../components/music-player/MusicPlayer")),
+  },
 ];
 
 export const ACCORDION_DATA = [

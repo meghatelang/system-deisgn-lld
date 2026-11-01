@@ -1,0 +1,33 @@
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+input {
+  border: 1px solid black;
+}
+
+button {
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+.file-list-container {
+  display: flex;
+  padding-left: 1.5rem;
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+}
+
+.file-add {
+  position: absolute;
+  margin-right: 0;
+}

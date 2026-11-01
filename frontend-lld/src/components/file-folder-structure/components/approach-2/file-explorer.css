@@ -1,0 +1,23 @@
+input {
+  border: 1px solid black;
+}
+
+button {
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.file-list {
+  padding-left: 1.5rem;
+}
+
+.file-list-container {
+  width: 40%;
+  position: relative;
+}
+
+.add-file-btn {
+  position: absolute;
+  right: 0;
+}

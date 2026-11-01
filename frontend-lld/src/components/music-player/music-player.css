@@ -1,0 +1,7 @@
+.songs-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+  align-items: center;
+}
