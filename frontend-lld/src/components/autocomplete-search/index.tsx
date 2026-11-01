@@ -8,17 +8,23 @@ const AutocompleteSearch = () => {
   const [showResults, setShowResults] = useState<Boolean>(false);
 
   useEffect(() => {
+    const controller = new AbortController();
+
     const t = setTimeout(() => {
-      fetchData();
+      fetchData(controller.signal);
     }, 300);
     return () => {
       clearTimeout(t);
+      controller.abort();
     };
   }, [searchText]);
 
-  const fetchData = async () => {
+  const fetchData = async (abortSignal: AbortSignal) => {
     const response = await fetch(
       "https://www.google.com/complete/search?client=firefox&q=" + searchText,
+      {
+        signal: abortSignal,
+      },
     );
 
     const data = await response.json();
