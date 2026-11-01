@@ -2,7 +2,7 @@ import React from "react";
 import type { FileNode } from "../../utils/data";
 
 interface FileListProps {
-  fileFolderData: FileNode[];
+  fileFolderData: ReadonlyArray<FileNode>;
   handleToggle: (node: FileNode) => void;
   addFileToFolder: (node: FileNode) => void;
   convertToFolder: (node: FileNode) => void;
@@ -23,6 +23,7 @@ const FileList = ({
             <button
               onClick={() => handleToggle(node)}
               onDoubleClick={() => convertToFolder(node)}
+              aria-expanded={node.files ? node.isOpen : undefined}
             >
               {node?.files ? (node.isOpen ? "-" : "+") : ""}
               <span>{node?.name}</span>
